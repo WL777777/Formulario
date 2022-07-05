@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <H1 id="titulo">Cadastre-se</H1>
+    <P id="subtitulo">Complete com suas informações.</P>
+
+<div>
+    <form>
+        <fieldset class="grupo">  <!-- esse fieldset vai ser a caixinha que vai englobar tudo que está dentro dele. -->
+                <div>
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                
+                <div>
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input type="text" name="Sobrenome" id="nome" required>
+                 </div>
+        </fieldset>
+
+         <div>
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required>
+
+         </div>
+
+         <div id="check" class="campo">
+             <label><strong>Qual tipo de projeto você deseja ?</strong></label>
+             <label>
+                 <input type="radio" name="projetos" value="Landing Page">Landing Page
+             </label>
+
+             <label>
+                 <input type="radio" name="projetos" value="Formulário">Formulário
+             </label>
+         </div>
+
+
+         <div class="campo">
+             <label for="Times"><strong>Escolha um time aleatório:</strong></label>
+             <select id="Times">
+                 <option selected disabled value="">Selecione</option>
+                 <option> Corinthians</option>
+                 <option> Palmeiras</option>
+                 <option> Flamengo</option>
+             </select>
+         </div>
+
+         <fieldset class="grupo">
+             <div>
+                 <label><strong>Selecione as tecnologias que você conhece: </strong></label><br><br>
+                 <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Python">
+                <label for="tecnologia5">Python</label>
+             </div>
+             
+         </fieldset> <br>
+         <button type="submit" class="botao"> Concluído </button>
+
+    </form>
+
+</div>
+
+<link rel="stylesheet" href="style.css">
+
+
+
+</body>
+
+
+</html>
